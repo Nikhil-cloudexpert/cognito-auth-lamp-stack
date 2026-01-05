@@ -1,3 +1,5 @@
+Lightweight AWS Cognito Authentication System using PHP (LAMP stack).
+
 # Cognito Authentication with LAMP Stack
 
 This project demonstrates a secure user authentication system using AWS Cognito integrated with a PHP (LAMP stack) backend.
