@@ -1,23 +1,71 @@
-# Cognito Auth with LAMP Stack
+# Cognito Authentication with LAMP Stack
 
-User authentication system using AWS Cognito with PHP (LAMP stack).
+This project demonstrates a secure user authentication system using AWS Cognito integrated with a PHP (LAMP stack) backend.
 
-## Features
-- User Signup
-- Email Verification
-- Login
-- JWT-based authentication
+The repository focuses on **backend–cloud integration, security best practices, and clean project structure**, suitable for real-world applications.
+
+---
+
+## Architecture Overview
+
+Frontend (HTML Forms)  
+→ PHP Backend (Apache)  
+→ AWS SDK for PHP  
+→ AWS Cognito (User Pool)
+
+---
+
+## Authentication Flow
+
+1. User signs up using email and password
+2. PHP backend sends request to AWS Cognito
+3. Cognito creates the user and sends a confirmation code via email
+4. User confirms the account using the verification code
+5. User can then log in and receive authentication tokens
+
+---
 
 ## Tech Stack
+
+- PHP (LAMP Stack)
+- Apache (XAMPP)
+- AWS SDK for PHP
 - AWS Cognito
-- PHP (Apache)
-- HTML/CSS/JS
-- MySQL (optional)
+- HTML / CSS
+- Git & GitHub
 
-## Note
-AWS Cognito resources are not currently active to avoid cloud costs.
-The code is fully functional and can be run by recreating the User Pool
-and updating config values.
+---
 
+## Security Practices
 
-## Author - Nikhil Singh ##
+- AWS credentials stored in `.env` file
+- `.env` excluded using `.gitignore`
+- No secrets committed to the repository
+- Configuration separated from application logic
+
+---
+
+## Project Structure
+
+```text
+cognito-auth-lamp-stack/
+│
+├── backend/
+│   └── signup.php
+│
+├── frontend/
+│   └── signup.html
+│
+├── config/
+│   └── cognito.php
+│
+├── vendor/          (ignored in Git)
+├── .env             (ignored in Git)
+├── .gitignore
+├── composer.json
+├── README.md
+---
+
+## Author
+
+**Nikhil**
