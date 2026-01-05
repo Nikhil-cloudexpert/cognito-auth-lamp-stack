@@ -21,7 +21,12 @@ Frontend (HTML Forms)
 2. PHP backend sends request to AWS Cognito
 3. Cognito creates the user and sends a confirmation code via email
 4. User confirms the account using the verification code
-5. User can then log in and receive authentication tokens
+5. User logs in using email and password
+6. AWS Cognito authenticates the user and returns JWT tokens
+   - ID Token
+   - Access Token
+   - Refresh Token
+
 
 ---
 
