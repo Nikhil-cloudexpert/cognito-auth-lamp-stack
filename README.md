@@ -14,4 +14,10 @@ User authentication system using AWS Cognito with PHP (LAMP stack).
 - HTML/CSS/JS
 - MySQL (optional)
 
+## Note
+AWS Cognito resources are not currently active to avoid cloud costs.
+The code is fully functional and can be run by recreating the User Pool
+and updating config values.
+
+
 ## Author - Nikhil Singh ##
